@@ -1,2 +1,2 @@
 // import "./bootstrap";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
