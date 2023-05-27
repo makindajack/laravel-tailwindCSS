@@ -14,4 +14,16 @@ export default defineConfig({
             plugins: [tailwindcss],
         },
     },
+    build: {
+        outDir: "public/assets",
+        assetsDir: "",
+        manifest: true,
+        rollupOptions: {
+            output: {
+                entryFileNames: "js/[name].js",
+                chunkFileNames: "js/[name].js",
+                assetFileNames: "css/[name].css",
+            },
+        },
+    },
 });
